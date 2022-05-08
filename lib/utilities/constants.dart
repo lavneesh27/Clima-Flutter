@@ -17,7 +17,8 @@ const kSmallTextStyle = TextStyle(
 );
 
 const kButtonTextStyle = TextStyle(
-  fontSize: 30.0,
+  color: Colors.white,
+  fontSize: 20.0,
   fontFamily: 'Nunito',
 );
 

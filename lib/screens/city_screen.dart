@@ -15,6 +15,7 @@ class _CityScreenState extends State<CityScreen> {
     return Scaffold(
       backgroundColor: Color(0xff081B25),
       body: Container(
+        padding: EdgeInsets.only(top: 20.0),
         constraints: BoxConstraints.expand(),
         child: SafeArea(
           child: Column(
@@ -44,7 +45,15 @@ class _CityScreenState extends State<CityScreen> {
                   },
                 ),
               ),
-              FlatButton(
+              TextButton(
+                  style: ButtonStyle(
+                      shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                          RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(18.0),
+                              side: BorderSide(color: Color(0xff6A81A0))
+                          )
+                      )
+                  ),
                 onPressed: () {
                   Navigator.pop(context, cityName);
                 },

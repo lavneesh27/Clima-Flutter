@@ -16,21 +16,9 @@ class LocationScreen extends StatefulWidget {
 
 class _LocationScreenState extends State<LocationScreen> {
   WeatherModel weather = WeatherModel();
-  var condition;
-  int temperature;
-  var humi;
-  var pres;
-  var speed;
-  var fl;
-  var visible;
-  var cloud;
-  var deg;
+  var condition,humi,pres,speed,fl,visible,cloud,deg,temperature;
   IconData ico;
-
-  String loc;
-  String weatherIcon;
-  String cityName;
-  String weatherMessage;
+  String loc,weatherIcon,cityName,weatherMessage;
 
   @override
   void initState() {
@@ -45,8 +33,10 @@ class _LocationScreenState extends State<LocationScreen> {
     setState(() {
       if (weatherData == null) {
         loc='City not found!';
-        temperature = 00;
+        temperature = 'null';
         ico = FontAwesomeIcons.exclamation;
+        fl='null';
+        condition='null';
         return;
       }
       var wId = weatherData['weather'][0]['id'];
