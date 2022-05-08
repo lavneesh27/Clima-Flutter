@@ -1,6 +1,6 @@
 Clima ☁
 
-Weather app inspired by the beautiful designs made by Adin Yanuar. You'll be able to find out the live weather data in the current location of the device as well as the weather for any city you can think of!
+Weather app inspired by the beautiful designs made by [Adin Yanuar](https://dribbble.com/shots/15292603-Weather-Conceptual-App-Design). You'll be able to find out the live weather data in the current location of the device as well as the weather for any city you can think of!
 
 During the development of this app, I've learned various dart functionalities such as:
 
